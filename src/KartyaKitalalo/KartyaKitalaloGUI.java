@@ -36,6 +36,9 @@ public class KartyaKitalaloGUI extends javax.swing.JFrame {
         pnl_kartya1 = new javax.swing.JPanel();
         lbl_kartyaSzin1 = new javax.swing.JLabel();
         lbl_kartyaErtek1 = new javax.swing.JLabel();
+        pnl_kartya6 = new javax.swing.JPanel();
+        lbl_kartyaSzin6 = new javax.swing.JLabel();
+        lbl_kartyaErtek6 = new javax.swing.JLabel();
         pnl_oszlop2 = new javax.swing.JPanel();
         pnl_kartya3 = new javax.swing.JPanel();
         lbl_kartyaSzin3 = new javax.swing.JLabel();
@@ -92,7 +95,7 @@ public class KartyaKitalaloGUI extends javax.swing.JFrame {
                 .addComponent(lbl_kartyaSzin)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(lbl_kartyaErtek)
-                .addContainerGap(32, Short.MAX_VALUE))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
         lbl_kartyaSzin1.setText("KártyaSzín");
@@ -120,7 +123,35 @@ public class KartyaKitalaloGUI extends javax.swing.JFrame {
                 .addComponent(lbl_kartyaSzin1)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(lbl_kartyaErtek1)
-                .addContainerGap(20, Short.MAX_VALUE))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+        );
+
+        lbl_kartyaSzin6.setText("KártyaSzín");
+
+        lbl_kartyaErtek6.setText("KártyaÉrték");
+
+        javax.swing.GroupLayout pnl_kartya6Layout = new javax.swing.GroupLayout(pnl_kartya6);
+        pnl_kartya6.setLayout(pnl_kartya6Layout);
+        pnl_kartya6Layout.setHorizontalGroup(
+            pnl_kartya6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(pnl_kartya6Layout.createSequentialGroup()
+                .addContainerGap()
+                .addGroup(pnl_kartya6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(pnl_kartya6Layout.createSequentialGroup()
+                        .addComponent(lbl_kartyaSzin6)
+                        .addGap(11, 11, 11))
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, pnl_kartya6Layout.createSequentialGroup()
+                        .addComponent(lbl_kartyaErtek6)
+                        .addContainerGap())))
+        );
+        pnl_kartya6Layout.setVerticalGroup(
+            pnl_kartya6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(pnl_kartya6Layout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(lbl_kartyaSzin6)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(lbl_kartyaErtek6)
+                .addContainerGap(13, Short.MAX_VALUE))
         );
 
         javax.swing.GroupLayout pnl_oszlop1Layout = new javax.swing.GroupLayout(pnl_oszlop1);
@@ -131,17 +162,19 @@ public class KartyaKitalaloGUI extends javax.swing.JFrame {
                 .addContainerGap()
                 .addGroup(pnl_oszlop1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(pnl_kartya, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(pnl_kartya1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(pnl_kartya1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(pnl_kartya6, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addContainerGap(62, Short.MAX_VALUE))
         );
         pnl_oszlop1Layout.setVerticalGroup(
             pnl_oszlop1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(pnl_oszlop1Layout.createSequentialGroup()
-                .addGap(15, 15, 15)
                 .addComponent(pnl_kartya, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(pnl_kartya1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addGap(116, 116, 116))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(pnl_kartya6, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addGap(108, 108, 108))
         );
 
         pnl_oszlop2.setBorder(javax.swing.BorderFactory.createTitledBorder("2.oszlop"));
@@ -353,7 +386,7 @@ public class KartyaKitalaloGUI extends javax.swing.JFrame {
                     .addGroup(layout.createSequentialGroup()
                         .addGap(193, 193, 193)
                         .addComponent(jLabel2)))
-                .addContainerGap(34, Short.MAX_VALUE))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -376,7 +409,7 @@ public class KartyaKitalaloGUI extends javax.swing.JFrame {
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel1)
                     .addComponent(jTextField1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addContainerGap(188, Short.MAX_VALUE))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
         pack();
@@ -425,12 +458,16 @@ public class KartyaKitalaloGUI extends javax.swing.JFrame {
     private javax.swing.JLabel lbl_kartyaErtek3;
     private javax.swing.JLabel lbl_kartyaErtek4;
     private javax.swing.JLabel lbl_kartyaErtek5;
+    private javax.swing.JLabel lbl_kartyaErtek6;
+    private javax.swing.JLabel lbl_kartyaErtek7;
     private javax.swing.JLabel lbl_kartyaSzin;
     private javax.swing.JLabel lbl_kartyaSzin1;
     private javax.swing.JLabel lbl_kartyaSzin2;
     private javax.swing.JLabel lbl_kartyaSzin3;
     private javax.swing.JLabel lbl_kartyaSzin4;
     private javax.swing.JLabel lbl_kartyaSzin5;
+    private javax.swing.JLabel lbl_kartyaSzin6;
+    private javax.swing.JLabel lbl_kartyaSzin7;
     private javax.swing.JLabel lbl_leiras;
     private javax.swing.JPanel pnl_kartya;
     private javax.swing.JPanel pnl_kartya1;
@@ -438,6 +475,8 @@ public class KartyaKitalaloGUI extends javax.swing.JFrame {
     private javax.swing.JPanel pnl_kartya3;
     private javax.swing.JPanel pnl_kartya4;
     private javax.swing.JPanel pnl_kartya5;
+    private javax.swing.JPanel pnl_kartya6;
+    private javax.swing.JPanel pnl_kartya7;
     private javax.swing.JPanel pnl_oszlop1;
     private javax.swing.JPanel pnl_oszlop2;
     private javax.swing.JPanel pnl_oszlop3;
